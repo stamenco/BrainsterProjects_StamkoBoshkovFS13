@@ -21,7 +21,96 @@
     <title>Brainster Labs</title>
   </head>
   <body>
-    <nav></nav>
+    <!-- section-navbar -->
+    <section>
+      <div class="target-overlay"></div>
+      <nav
+        class="navbar navbar-expand-lg font-weight-bold nav-shadow p-lg-3"
+        id="main-nav"
+      >
+        <a class="navbar-brand mx-lg-5" href="index.html"
+          ><img
+            src="images/brainster-logo.png"
+            alt="logo"
+            class="d-block logo-size"
+        /></a>
+        <button
+          class="navbar-toggler collapsed"
+          data-toggle="collapse"
+          data-target="#collapse-target"
+        >
+          <div class="menu-toggler-wrapper">
+            <span class="navbar-toggler-custom state-open"></span>
+            <span class="navbar-toggler-custom state-open"></span>
+            <span class="navbar-toggler-custom state-open"></span>
+          </div>
+          <i class="fas fa-times text-white fa-2x state-close"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="collapse-target">
+          <div class="wrap ml-auto">
+            <ul class="navbar-nav align-items-lg-center mt-4 mt-lg-0">
+              <li class="nav-item mb-2 mb-lg-0 ml-lg-5">
+                <a
+                  href="https://brainster.co/marketing/"
+                  class="nav-link text-center"
+                  target="_blank"
+                  >Академија за маркетинг</a
+                >
+              </li>
+              <li class="nav-item mb-2 mb-lg-0 ml-lg-3">
+                <a
+                  href="https://brainster.co/full-stack/"
+                  class="nav-link text-center"
+                  target="_blank"
+                  >Академија за програмирање</a
+                >
+              </li>
+              <li class="nav-item mb-2 mb-lg-0 ml-lg-3">
+                <a
+                  href="https://brainster.co/data-science/"
+                  class="nav-link text-center"
+                  target="_blank"
+                  >Академија за Data-Science</a
+                >
+              </li>
+              <li class="nav-item mb-2 mb-lg-0 ml-lg-3">
+                <a
+                  href="https://brainster.co/graphic-design/"
+                  class="nav-link text-center"
+                  target="_blank"
+                  >Академија за дизајн</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="wrap ml-auto">
+            <ul class="navbar-nav align-items-lg-center">
+              <li class="nav-item">
+                <a href="form.html" class="nav-link btn-exception"
+                  ><button class="btn btn-custom font-weight-bold">
+                    Вработи наш студент
+                  </button></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- section-banner -->
+    <section class="container-fluid">
+      <div class="row banner-specs">
+        <div class="col d-flex justify-content-center align-items-center">
+          <h1
+            class="text-white text-center text-bold h1-fsize mb-0 h1-padding h1-outline"
+          >
+            Brainster Labs
+          </h1>
+        </div>
+      </div>
+    </section>
+
     <!-- JQUERY CDN LINK -->
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -41,5 +130,6 @@
       integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
       crossorigin="anonymous"
     ></script>
+    <script src="./main.js"></script>
   </body>
 </html>
