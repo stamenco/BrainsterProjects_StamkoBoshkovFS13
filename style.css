@@ -125,9 +125,9 @@ p {
 .navbar-toggler.collapsed .state-close {
   display: none;
 }
-.anim-pulse {
+/* .anim-pulse {
   animation: pulse 1.5s infinite;
-}
+} */
 .banner-specs {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
     url(./images/banner.jpg);
@@ -252,7 +252,7 @@ input.form-control {
     font-size: 65px;
   }
   .banner-specs {
-    height: calc(100vh - 88px - 98px);
+    height: calc(100vh - 101px - 98px);
   }
   .list.bg-active {
     box-shadow: 0px 25px 61px -17px rgba(0, 0, 0, 0.75);
