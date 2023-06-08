@@ -16,10 +16,10 @@ p {
 .bg-active {
   background-color: #eb3b3b;
 }
-.h1-fsize {
+/* .h1-fsize {
   font-size: 40px;
-  /* font-weight: 700; */
-}
+  font-weight: 700;
+} */
 .f-13 {
   font-size: 13px;
 }
@@ -238,9 +238,9 @@ input.form-control {
   }
 }
 @media (min-width: 768px) {
-  .h1-fsize {
+  /* .h1-fsize {
     font-size: 65px;
-  }
+  } */
   .banner-specs {
     height: calc(100vh - 101px - 98px);
   }
