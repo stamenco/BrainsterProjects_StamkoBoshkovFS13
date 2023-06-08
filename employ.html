@@ -23,7 +23,7 @@
   </head>
   <body>
     <!-- section-navbar -->
-    <section>
+    <section class="bg-yellow">
       <div class="target-overlay"></div>
       <nav
         class="navbar navbar-expand-lg font-weight-bold nav-shadow p-lg-3"
@@ -99,6 +99,117 @@
       </nav>
     </section>
 
+    <!-- section-form -->
+    <div class="bg-yellow">
+      <div class="col-lg-8 offset-lg-2">
+        <div class="row py-5">
+          <div class="col">
+            <h1 class="h1-fsize text-center">Вработи студенти</h1>
+          </div>
+        </div>
+        <form class="row form-bottom-padding">
+          <div class="col-md-6 form-group">
+            <label for="name" class="font-weight-bold">Име и презиме</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Вашето име и презиме"
+              required
+              id="name"
+              oninvalid="this.setCustomValidity('Задолжително поле! Ве молиме внесете Ваше име и презиме.')"
+              oninput="this.setCustomValidity('')"
+            />
+          </div>
+          <div class="col-md-6 form-group">
+            <label for="companyName" class="font-weight-bold"
+              >Име на компанија</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Име на вашата компанија"
+              required
+              id="companyName"
+              oninvalid="this.setCustomValidity('Задолжително поле! Ве молиме внесете го името на Вашата компанија.')"
+              oninput="this.setCustomValidity('')"
+            />
+          </div>
+          <div class="col-md-6 form-group">
+            <label for="email" class="font-weight-bold">Контакт имејл</label>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Контакт имејл на вашата компанија"
+              required
+              id="email"
+              oninvalid="this.setCustomValidity('Задолжително поле! Ве молиме внесете валидна e-mail адреса.')"
+              oninput="this.setCustomValidity('')"
+            />
+          </div>
+          <div class="col-md-6 form-group">
+            <label for="phone" class="font-weight-bold">Контакт телефон</label>
+            <input
+              type="number"
+              class="form-control"
+              placeholder="Контакт телефон на вашата компанија"
+              required
+              id="phone"
+              oninvalid="this.setCustomValidity('Задолжително поле! Ве молиме внесете контакт телефон.')"
+              oninput="this.setCustomValidity('')"
+            />
+          </div>
+          <div class="col-md-6 form-group">
+            <label for="students" class="font-weight-bold"
+              >Тип на студенти</label
+            >
+            <div class="select-wrapper">
+              <div
+                class="dropdown cursor d-flex justify-content-between align-items-center font-weight-bold"
+              >
+                Изберете тип на студент
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <ul class="dropdown-container p-0 font-weight-bold">
+                <li class="dropdownLink cursor border-bottom">
+                  Студенти од маркетинг
+                </li>
+                <li class="dropdownLink cursor border-bottom">
+                  Студенти од програмирање
+                </li>
+                <li class="dropdownLink cursor border-bottom">
+                  Студенти од data science
+                </li>
+                <li class="dropdownLink cursor border-bottom">
+                  Студенти од дизајн
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 form-group">
+            <label for="button" class="invisible">Placeholder</label>
+            <button
+              type="submit"
+              class="form-control btn-lg btn-block btn-custom-form"
+            >
+              ИСПРАТИ
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- section-footer -->
+    <footer class="container-fluid bg-gray">
+      <div class="row p-3">
+        <div class="col d-flex justify-content-center">
+          <span class="text-white f-13 f-var"
+            >Изработено со <span class="heart-color">&#10084;</span> од
+            студентите на Brainster</span
+          >
+        </div>
+      </div>
+    </footer>
+
     <!-- JQUERY CDN LINK -->
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -111,7 +222,6 @@
       integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
       crossorigin="anonymous"
     ></script>
-
     <!-- BOOTSTRAP JS CDN LINK  -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"

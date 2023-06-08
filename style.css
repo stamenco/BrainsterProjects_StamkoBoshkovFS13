@@ -1,5 +1,5 @@
 body {
-  background-color: #fcd232;
+  margin: 0;
 }
 p {
   line-height: 1.2;
@@ -158,10 +158,10 @@ p {
   font-style: italic;
   color: #b4b4b4;
 }
-.form-title-padding {
-  padding-top: 130px;
-  padding-bottom: 130px;
-}
+/* .form-title-padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+} */
 .form-bottom-padding {
   padding-bottom: 200px;
 }
