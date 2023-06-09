@@ -242,7 +242,7 @@ input.form-control {
     font-size: 65px;
   } */
   .banner-specs {
-    height: calc(100vh - 101px - 98px);
+    height: calc(100vh - 102.73px - 88.38px);
   }
   .list.bg-active {
     box-shadow: 0px 25px 61px -17px rgba(0, 0, 0, 0.75);
