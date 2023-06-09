@@ -242,7 +242,7 @@ input.form-control {
     font-size: 65px;
   } */
   .banner-specs {
-    height: calc(100vh - 102.73px - 88.38px);
+    height: calc(100vh - 102.73px - 88.38px - 104px);
   }
   .list.bg-active {
     box-shadow: 0px 25px 61px -17px rgba(0, 0, 0, 0.75);
@@ -258,7 +258,7 @@ input.form-control {
     transform: scale(1.1);
   }
   .card:hover {
-    transform: scale(1.05) translateY(-0.45rem);
+    transform: scale(1.03) translateY(-3px);
   }
   .btn-custom:hover,
   .btn-custom-form:hover {
