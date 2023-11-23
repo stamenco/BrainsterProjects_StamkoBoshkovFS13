@@ -17,6 +17,11 @@
   margin: auto;
 }
 
+/* .h1-outline {
+  -webkit-text-stroke-width: 2px !important;
+  -webkit-text-stroke-color: #ffc107 !important;
+} */
+
 .navbar-brand p {
   font-size: 0.8rem;
 }
