@@ -1,5 +1,5 @@
-export let path = "http://localhost/brainster_projects/";
-// export let path = __DIR__;
+export let path = "http://localhost/BrainsterLibrary/"; //same as define("PATH", "http://localhost/BrainsterLibrary/") from source/const.php
+// console.log(location);
 
 export function danger(message, element = "notification", timer = 2000) {
   $(`#${element}`).fadeIn();
