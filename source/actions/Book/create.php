@@ -33,13 +33,13 @@ if ($_POST['process'] = 'bookCreate') {
     }
 
     try {
-        $stmt = DB::connect()->prepare("SELECT existing_author_id FROM books WHERE existing_author_id = ?");
-        $stmt->execute([$_POST['book_author']]);
+        // $stmt = DB::connect()->prepare("SELECT existing_author_id FROM books WHERE existing_author_id = ?");
+        // $stmt->execute([$_POST['book_author']]);
 
-        if ($stmt->rowCount() != 0) {
-            echo json_encode(['auth' => false, 'message' => 'There are existing book with selected author']);
-            exit;
-        }
+        // if ($stmt->rowCount() != 0) {
+        //     echo json_encode(['auth' => false, 'message' => 'There are existing book with selected author']);
+        //     exit;
+        // }
 
         $book_code = generateCode();
         $stmt = DB::connect()->prepare("SELECT code FROM books WHERE code = ?");
@@ -52,12 +52,11 @@ if ($_POST['process'] = 'bookCreate') {
         $stmt = DB::connect()->prepare("INSERT INTO books 
               (existing_author_id, category, title, published, pages, cover_image, code) 
         VALUES(?, ?, ?, ?, ?, ?, ?)");
-        
+
         $stmt->execute([$_POST['book_author'], $_POST['book_category'], $_POST['book_title'], $_POST['book_published'], $_POST['book_pages'], $_POST['book_image_url'], $book_code]);
 
         echo json_encode(['auth' => true, 'book_code' => $book_code]);
         exit;
-
     } catch (PDOException $e) {
         echo json_encode(['auth' => false, 'message' => $e]);
         exit;
