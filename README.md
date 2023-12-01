@@ -7,7 +7,8 @@ BrainsterLibrary -> Project02
 Project SETUP Before start:
 
 1. Create DATABASE, importing file (brainsterlibrary (populated).sql) is located in folder named "db_files"
-   ^^^ in "user-info.txt" are information about already created users
+
+   - in "user-info.txt" are information about already created users
 
 2. Go to /source/consts.php and define:
 
