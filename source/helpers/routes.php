@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 /**
  * Removing '/' from application path and then adding it again
