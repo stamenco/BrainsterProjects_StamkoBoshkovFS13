@@ -33,13 +33,13 @@ if ($_POST['process'] = 'bookCreate') {
     }
 
     try {
-        // $stmt = DB::connect()->prepare("SELECT existing_author_id FROM books WHERE existing_author_id = ?");
-        // $stmt->execute([$_POST['book_author']]);
+        $stmt = DB::connect()->prepare("SELECT * FROM books WHERE title = ? AND existing_author_id = ?");
+        $stmt->execute([$_POST['book_title'], $_POST['book_author']]);
 
-        // if ($stmt->rowCount() != 0) {
-        //     echo json_encode(['auth' => false, 'message' => 'There are existing book with selected author']);
-        //     exit;
-        // }
+        if ($stmt->rowCount() != 0) {
+            echo json_encode(['auth' => false, 'message' => 'There is existing book with this title and selected author']);
+            exit;
+        }
 
         $book_code = generateCode();
         $stmt = DB::connect()->prepare("SELECT code FROM books WHERE code = ?");
