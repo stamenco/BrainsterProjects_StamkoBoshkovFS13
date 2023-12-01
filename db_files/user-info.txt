@@ -1,0 +1,7 @@
+ADMIN:
+	email: 		admin@admin.com
+	password:	admin
+
+USER:
+	email: 		stamenco@gmail.com
+	password:	password
