@@ -2,7 +2,7 @@
 
 Projects Repository
 
-BrainsterLibrary -> Project02
+# BrainsterLibrary -> Project02
 
 Project SETUP Before start:
 
