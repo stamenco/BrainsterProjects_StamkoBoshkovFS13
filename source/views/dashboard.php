@@ -14,17 +14,18 @@ require_once __DIR__ . "/../layouts/navbar.php"; ?>
             <button class="nav-link active" id="dashboard-tab" data-bs-target="#dashboard" data-bs-toggle="tab">Dashboard</button>
         </li>
         <li class="nav-item">
-            <button class="nav-link" id="categories-tab" data-bs-target="#categories" data-bs-toggle="tab">Categories</button>
-        </li>
-        <li class="nav-item">
             <button class="nav-link" id="authors-tab" data-bs-target="#authors" data-bs-toggle="tab">Authors</button>
         </li>
         <li class="nav-item">
-            <button class="nav-link" id="comments-tab" data-bs-target="#comments" data-bs-toggle="tab">Comments</button>
+            <button class="nav-link" id="categories-tab" data-bs-target="#categories" data-bs-toggle="tab">Categories</button>
         </li>
         <li class="nav-item">
             <button class="nav-link" id="books-tab" data-bs-target="#books" data-bs-toggle="tab">Books</button>
         </li>
+        <li class="nav-item">
+            <button class="nav-link" id="comments-tab" data-bs-target="#comments" data-bs-toggle="tab">Comments</button>
+        </li>
+
     </ul>
     <div class="tab-content" id="myTabContent">
         <div id="notification" class="mt-4"></div>
